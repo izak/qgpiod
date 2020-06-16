@@ -12,6 +12,7 @@ class QGpiod
             return instance;
         }
 		void toggle();
+		void set(int);
     private:
         QGpiod();
         QGpiod(QGpiod const&);

@@ -17,3 +17,8 @@ void QGpiod::toggle()
 	mState = !mState;
 	gpiod_line_set_value(mLine, mState);
 }
+
+void QGpiod::set(int l)
+{
+	gpiod_line_set_value(mLine, mState = l);
+}
